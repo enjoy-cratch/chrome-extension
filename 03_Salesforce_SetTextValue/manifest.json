@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3
+    , "version": "1.0"
+    , "name": "SalesforceAutoRegist"
+    , "description": "Salesforce自動登録 3回目"
+
+    , "background": {
+        "service_worker":"background.js"
+    }
+    , "permissions": [
+        "activeTab",
+        "scripting",
+        "contextMenus"
+    ]
+}
