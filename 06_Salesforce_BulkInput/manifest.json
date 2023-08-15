@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3
+    , "version": "1.0"
+    , "name": "SalesforceAutoRegist"
+    , "description": "Salesforce自動登録 6回目"
+
+    , "background": {
+        "service_worker":"background.js"
+    }
+
+    , "host_permissions": [
+        "http://*/"
+        , "https://*/"
+      ]
+    , "permissions": [
+        "activeTab"
+        , "scripting"
+        , "contextMenus"
+        , "debugger"
+        , "tabs"
+    ]
+}
