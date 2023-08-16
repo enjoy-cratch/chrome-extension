@@ -1,0 +1,53 @@
+　アクセスURL：https://g2pg3ktma1f9.cybozu.com
+　ログイン名： メアド
+　ご利用ユーザー数：5ユーザー（Administrator 除く）
+　
+　
+■プラグイン開発手順
+https://cybozudev.zendesk.com/hc/ja/articles/203455680-kintone-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E6%89%8B%E9%A0%86
+
+
+https://cybozu.dev/ja/kintone/docs/rest-api/list/
+
+
+■kintone REST API 
+https://cybozu.dev/ja/kintone/docs/rest-api/records/get-record/
+GET／POST／PUT／DELETEを使用してレコード等の情報を操作する。
+
+サンプルコード
+----------------------------------------------------------------------------------------------------
+■アプリIDの確認方法
+アプリ(企業管理)のページを表示させたときのURLで分かる。
+https://g2pg3ktma1f9.cybozu.com/k/2/
+　⇒　アプリIDは「2」
+
+https://cybozu.dev/ja/kintone/docs/js-api/app/get-app-id/
+または「kintone.app.getId()」で取得ができる。
+
+■レコードIDの取得方法
+https://cybozu.dev/ja/kintone/docs/js-api/record/get-record-id/
+kintone.app.record.getId()
+　⇒詳細画面であれば使用できる。
+
+
+
+
+
+
+★レコードを1件取得する。
+URL  : https://sample.cybozu.com/k/v1/record.json
+param: アプリID, レコードID
+
+
+★レコードを複数件取得する。
+
+
+■use strict 
+https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Strict_mode
+
+https://cybozudev.zendesk.com/hc/ja/articles/201755040
+チュートリアル
+■特定の画面で実行する。
+
+
+https://cybozu.dev/ja/kintone/docs/rest-api/apps/form/get-form-fields/

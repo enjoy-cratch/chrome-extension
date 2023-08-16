@@ -1,0 +1,14 @@
+{
+	"manifest_version": 3
+    , "version": "1.0"
+    , "name": "カード情報取得"
+    , "description": "カード情報を非同期で取得する。"
+
+    , "content_scripts":[
+        {
+            "matches": ["https://www.db.yugioh-card.com/yugiohdb/card_search.action*AutoMode*"]
+            , "js": ["VBA_Response.js", "VBA_Request.js", "get_card_detail.js"]
+            , "run_at":"document_end"
+        }
+    ]
+}
